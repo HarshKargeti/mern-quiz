@@ -5,27 +5,25 @@ To view the app, click [here](https://quiz-app-81g0.onrender.com)
 Create an account with a username, email address, password. 
 
 # Run Locally
-Clone the project
+## Clone the project
 
   git clone https://github.com/HarshKargeti/mern-quiz.git
   
-Go to the project directory
+## Go to the project directory :  
 
-  cd mern-quiz-main
+cd mern-quiz-main
 
-Install dependencies for Client And Server
+## Install dependencies for Client And Server :
 
   npm run setup-project
 
-Start both server 
+## Start both server :
 
   npm run dev
 
 # Connection String
 For security reasons we used our own Mongo Atlas string which is stored in a .env file 
 You will need to set your own connection string up in order to store and retrieve your own data, but your environmental variable must be called, 'MONGO_URL'.
-You also have to set JWT_SECRET = secret
-JWT_EXPIRES_IN = 1d
 
 # JWT
 JWT is used for user authentication.
