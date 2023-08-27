@@ -15,6 +15,7 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 
 //middleware
+import errorHandlerMiddleware from './middleware/errorHandlerMiddleware.js';
 import { authenticateUser } from './middleware/authMiddleware.js';
 
 import cookieParser from 'cookie-parser';
@@ -47,6 +48,8 @@ app.get('*', (req, res) => {
 app.use('*', (req, res) => {
   res.status(404).json({ msg: 'not found' });
 });
+
+app.use(errorHandlerMiddleware);
 
 const port = process.env.PORT || 5100
 
