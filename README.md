@@ -7,7 +7,7 @@ Create an account with a username, email address, password.
 # Run Locally
 Clone the project
 
-  git clone https://github.com/Aaditya1978/Quiz-App-MERN
+  git clone https://github.com/HarshKargeti/mern-quiz.git
   
 Go to the project directory
 
